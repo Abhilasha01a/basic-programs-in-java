@@ -28,6 +28,7 @@ public class Main {
 			if(n%c==0) {
 				return false;
 			}
+			c++;
 		}
 			
 		return true;
