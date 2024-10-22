@@ -1,0 +1,23 @@
+import java.util.Stack;
+class HelloWorld {
+    public static String RevString(String str){
+        Stack<Character> stack=new Stack<>();
+        for(char c:str.toCharArray()){
+            stack.push(c);
+        }
+        
+        StringBuilder RevString =new StringBuilder();
+        while(!stack.isEmpty()){
+            RevString.append(stack.pop());
+        }
+        return RevString.toString();
+    }
+    
+    public static void main(String[] args) {
+        String str="Hello World!";
+        String rev=RevString(str);
+        System.out.println("Before reversing:"+str);
+        System.out.println("After reversing:"+rev);
+        
+    }
+}
